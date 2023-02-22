@@ -65,6 +65,7 @@ img {
 /* Header End */
 
 /* Main Start */
+/* Movies Start */
 .movies__cards {
   margin-top: 30px;
   display: flex;
@@ -103,21 +104,21 @@ img {
   background: #808080;
 }
 
-.card_info {
+.card__info {
   padding: 10px 0;
 }
 
-.card_title {
+.card__title {
   color: #fff;
   font-size: 16px;
 }
 
-.card_genre {
+.card__genre {
   color: #ffd80e;
   font-size: 14px;
 }
 
-.card_rating {
+.card__rating {
   border-radius: 50%;
   width: 36px;
   height: 36px;
@@ -131,15 +132,74 @@ img {
   left: 10px;
 }
 
-.card_rating-red {
+.card__rating-red {
   border: 1.5px solid red;
 }
 
-.card_rating-orange {
+.card__rating-orange {
   border: 1.5px solid orange;
 }
 
-.card_rating-green {
+.card__rating-green {
   border: 1.5px solid green;
 }
+/* Movies End */
+
+/* Modal Start */
+.modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: auto;
+  transition: width 2s;
+}
+
+.modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__card {
+  max-width: 600px;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background: #1a191f;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal__movie-backdrop {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.modal__info {
+  margin-left: 20px;
+  list-style: inside;
+}
+
+.modal__close {
+  padding: 6px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.modal__website-link {
+  color: #ffd80e;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+/* Modal End */
 /* Main End */
